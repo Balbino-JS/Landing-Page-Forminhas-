@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box; /*Paraajudar na responsividade*/
+    font-family: "Poppins" sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to right, #6b6b2a, #4c5f15, #212604);
+}
+main {
+padding: 2rem 8%;
+}
+.btn-default {
+    align-items: center;
+    background: linear-gradient(to right, #143604,#b7d7a8, #455022, #4b5320, #8a9a5b, #1a4d02);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 10px 14px;
+}
+.btn-default:hover {
+    background: linear-gradient(to right, #226304, #d0e399, #4a5507, #2a3703, #236c02);
+    transition: background-color .3s ease;
+}
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+.social-media-buttons a {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.5);
+    color: #1d1d1d;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    width: 45px;
+    text-decoration: none;
+}
+.social-media-buttons a:hover {
+    box-shadow: 0 0 12px 0.8rem rgb(0, 0, 0, 0.2);
+    transition: background-color .3s ease;
+}
+h1 {
+    font-size: 3.1875rem;
+}
+h2 {
+    font-size: 2.1875rem;
+}
+h3,h4 {
+    font-size: 1.5000rem;
+}
+@media screen and (max-width: 1170px){
+    .social-media-buttons {
+        justify-content: center;
+    }
+}
