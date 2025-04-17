@@ -1,4 +1,16 @@
-
+header {
+    padding: 28px;
+    width: 100%;
+}
+.logo-img {
+    /*background-color: 0px 0px 12px 4px rgb(0, 0, 0, 0.9);*/
+    border-radius: 20%;
+    cursor: pointer;
+    height: 6rem;
+    margin: 1rem;
+    object-fit: cover;
+    padding: 1rem;
+}
 #navbar {
     align-items: center;
     display: flex;
@@ -11,16 +23,16 @@
     list-style: none;
 }
 .nav-item a {
-    color: #1d1d1d;
-    font-weight: 600;
+    color: #0c0c0c;
+    font-weight: 500;
     text-decoration: none;
 }
-.nav-item, .active a{
+.nav-item.active a {
     color: #1d1d1d;
-    border-bottom: 3px solid #0bce08;
+    border-bottom: 3px solid #0dff00;
 }
 #mobile_btn {
-display: flex;
+    display: none;
 }
 #mobile_menu {
     display: none;
@@ -33,9 +45,9 @@ display: flex;
     #mobile_btn {
         background-color: transparent;
         border: none;
-        cursor:  pointer;
-        display: block;
         font-size: 1.5rem;
+        cursor: pointer;
+        display: block;
     }
     #mobile_menu.active {
         align-items: center;
@@ -46,47 +58,10 @@ display: flex;
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin: 12px 0;
-    }
-    #mobile_nav_list .nav-item {
-        list-style: none;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 1170px) {
-    #nav_list,
-    #navbar .btn-default {
-        display: none;
-    }
-    #mobile_btn {
-        background-color: transparent;
-        border: none;
-        cursor:  pointer;
-        display: block;
-        font-size: 1.5rem;
-    }
-    #mobile_menu.active {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        margin: 12px 0px;
     }
     #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0;
+       list-style: none;
+       text-align: center; 
     }
-    #mobile_nav_list .nav-item {
-        list-style: none;
-        text-align: center;
-    }
-}
- img {
-    border-radius: 100%;
-    cursor: pointer;
-    height: 100px;
-    justify-content: center;
-    margin: 1rem;
-    padding: 1rem;
-    
 }

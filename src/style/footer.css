@@ -1,0 +1,21 @@
+footer {
+    background-color: #073607;
+}
+#footer_items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    color: #1d1d1d;
+    font-weight: 500;
+}
+span {
+    margin: 1rem;
+}
+@media screen and (max-width: 600px) {
+    #footer_itmes {
+         flex-direction: column;
+         gap: 20px;
+    }
+}

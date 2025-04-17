@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     box-sizing: border-box; /*Paraajudar na responsividade*/
-    font-family: "Poppins" sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
     margin: 0;
     padding: 0;
 }
 body {
-    background: linear-gradient(to right, #6b6b2a, #4c5f15, #212604);
+    background: linear-gradient(to right, #689a74, #4da94f, #2c7e28);
 }
 main {
 padding: 2rem 8%;
@@ -46,13 +46,13 @@ padding: 2rem 8%;
     box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.5);
     color: #1d1d1d;
     display: flex;
-    height: 3rem;
+    height: 2rem;
     justify-content: center;
-    width: 45px;
+    width: 3rem;
     text-decoration: none;
 }
 .social-media-buttons a:hover {
-    box-shadow: 0 0 12px 0.8rem rgb(0, 0, 0, 0.2);
+    box-shadow: 0 0 12px 0.8rem rgb(0, 0, 0, 0.3);
     transition: background-color .3s ease;
 }
 h1 {

@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="src/style/style.css">
-    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/menu.css">
     <link rel="stylesheet" href="src/style/header.css">
+    <link rel="stylesheet" href="src/style/home.css">
+    <link rel="stylesheet" href="src/style/footer.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Fátima Marques Forminhas</title>
 </head>
 <body>
     <!--Criação do nav bar-->
     <header>
+        <!--
+        </div>-->
         <nav id="navbar">
-            <div class="img-container">
-                <img  src="src/img/DALL·E 2025-04-14 00.16.50 - Aesthetic background with a soft green and marble texture, decorated with delicate botanical illustrations. The letters 'FM' remain in an elegant, cur.webp" alt="Logo">
-            </div>
+                <img class="logo-img" src="src/img/DALL·E 2025-04-14 00.16.50 - Aesthetic background with a soft green and marble texture, decorated with delicate botanical illustrations. The letters 'FM' remain in an elegant, cur.webp" alt="Logo">
+    
             <ul id="nav_list">
-                <li class="nav-item active"> <a href="home"></a>Início</li>
-                <li class="nav-item active"> <a href="#sobre"></a>Sobre nós</li>
-                <li class="nav-item active"> <a href="#catalogo"></a>Nosso Trabalho</li>
-                <li class="nav-item active"> <a href="#contact"></a>Contato</li>            
+                <li class="nav-item active"> <a href="#home">Início</a></li>
+                <li class="nav-item"> <a href="#sobre">Sobre nós</a></li>
+                <li class="nav-item"> <a href="#catalogo">Nosso Trabalho</a></li>
+                <li class="nav-item"> <a href="#contact">Contato</a></li>            
             </ul>
             <button class="btn-default">Fale conosco</button>
+
             <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
 
         <!--Criando o nav mobile-->
-        <div id="mobile_menu" class="active">
+        <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item active"> <a href="#home"></a>Início</li>
-                <li class="nav-item active"> <a href="#sobre"></a>Sobre nós</li>
-                <li class="nav-item active"> <a href="#catalogo"></a>Nosso Trabalho</li>
-                <li class="nav-item active"> <a href="#contact"></a>Contato</li>            
+                <li class="nav-item"> <a href="#home">Início</a></li>
+                <li class="nav-item"> <a href="#sobre">Sobre nós</a></li>
+                <li class="nav-item"> <a href="#catalogo">Nosso Trabalho</a></li>
+                <li class="nav-item"> <a href="#contact">Contato</a></li>            
             </ul>
             <button class="btn-default">Fale conosco</button>
         </div>
@@ -45,92 +50,97 @@
     
         <!--Criando a home-->    
         <section id="home">
-            <div class="shape"><img src="" alt="Foto"></div>
             <div id="cta">
-                <h1>Forminhas Fátima Marques</h1>
-                <h2>Fátima Forminhas - Nobreza em cada Detalhe</h2>
+                <h1><strong>Forminhas Fátima Marques</strong></h1>
+                <h2><strong>Fátima Forminhas</strong> - Nobreza em cada Detalhe</h2>
                 <p class="description">Encante seus convidados com forminhas artesanais, delicadas e exclusivas para doces finos. Perfeitas para casamentos, aniversários, batizados e eventos especiais, nossas forminhas florais transformam sua mesa em verdadeiro jardim encantado. Feitas à mão com maior, cuidado e criatividade!</p><br>
-                <p>•	Modelos personalizados</p>
-                <p>•	Flores realista e sofisticadas</p>
-                <p>•	Atendimento para todo o Brasil</p>
-                <p>Transforme seus doces em verdadeiras obras de arte!</p>
+                <p class="description">• Modelos personalizados</p>
+                <p class="description">• Flores realista e sofisticadas</p>
+                <p class="description">• Atendimento para todo o Brasil</p>
+                <p class="description">Transforme seus doces em verdadeiras obras de arte!</p>
+                <button class="btn-default link-action"><a href="#catalogo">Saiba mais</a></button>
             </div>
-            <button class="btn-default">Saiba mais</button>
+            
+            <div class="box-img-main">
+                <img class="img-profile" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.07.46_9f60774f.jpg" alt="Foto"></div>
         </section>
 
         <!--Criando seciton nosso trabalho-->
         <section id="catalogo">
             <h2 class="section-subtitle">Nosso Trabalho</h2>
-
-            <!--Aqui serão adicionados as imagens-->
-            <div class="forminhas">
-
-                <!--section 1-->
-                <div class="forminha">
-                    <img src="" alt="Forminhas">
+        
+            <div class="catalogo-grid">
+                <!-- Imagem em destaque (à esquerda) -->
+                <div class="forminha destaque">
+                    <img class="forminha-img" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.05.59_5a5cdfa9.jpg" alt="Forminhas">
                     <h3 class="forminha-title">[nome da forminha]</h3>
                     <span class="forminha-description">Descrição da forminha</span>
                     <div class="forminha-price">
                         <h4>Consulte o valor</h4>
-                        <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+                        <button class="btn-default"><i class="fa-solid fa-phone"> </i> (55+) 34 9 9999-9999</button>
                     </div>
                 </div>
-            
-            
-                <!--section 2-->
-                <div class="forminha">
-                    <img src="" alt="Forminhas">
-                    <h3 class="forminha-title">[nome da forminha]</h3>
-                    <span class="forminha-description">Descrição da forminha</span>
-                    <div class="forminha-price">
-                        <h4>Consulte o valor</h4>
-                        <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
-                    </div>  
-                </div>
-
-                <!--section 3-->
-                <div class="forminha">
-                    <img src="" alt="Forminhas">
-                    <h3 class="forminha-title">[nome da forminha]</h3>
-                    <span class="forminha-description">Descrição da forminha</span>
-                    <div class="forminha-price">
-                        <h4>Consulte o valor</h4>
-                        <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+        
+                <!-- Grid das outras 6 forminhas (à direita) -->
+                <div class="forminhas-grid">
+                    <!-- Forminha 1 -->
+                    <div class="forminha">
+                        <img class="forminha-img" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.03.29_7c6a28a1.jpg" alt="Forminhas">
+                        <h3 class="forminha-title">[nome da forminha]</h3>
+                        <span class="forminha-description">Descrição da forminha</span>
+                        <div class="forminha-price">
+                            <h4>Consulte o valor</h4>
+                            <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+                        </div>
+                    </div>
+        
+                    <!-- Forminha 2 -->
+                    <div class="forminha">
+                        <img class="forminha-img" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.03.29_5a9be6a0.jpg" alt="Forminhas">
+                        <h3 class="forminha-title">[nome da forminha]</h3>
+                        <span class="forminha-description">Descrição da forminha</span>
+                        <div class="forminha-price">
+                            <h4>Consulte o valor</h4>
+                            <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+                        </div>
+                    </div>
+        
+                    <!-- Forminha 3 -->
+                    <div class="forminha">
+                        <img class="forminha-img" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.03.29_06b846d2.jpg" alt="Forminhas">
+                        <h3 class="forminha-title">[nome da forminha]</h3>
+                        <span class="forminha-description">Descrição da forminha</span>
+                        <div class="forminha-price">
+                            <h4>Consulte o valor</h4>
+                            <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+                        </div>
+                    </div>
+        
+                    <!-- Forminha 4 -->
+                    <div class="forminha">
+                        <img class="forminha-img" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.06.00_5df0bd40.jpg" alt="Forminhas">
+                        <h3 class="forminha-title">[nome da forminha]</h3>
+                        <span class="forminha-description">Descrição da forminha</span>
+                        <div class="forminha-price">
+                            <h4>Consulte o valor</h4>
+                            <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+                        </div>
+                    </div>
+        
+                    <!-- Forminha 5 -->
+                  
+        
+                    <!-- Forminha 6 -->
+                    <div class="forminha">
+                        <img class="forminha-img" src="src/img/Imagem do WhatsApp de 2025-04-13 à(s) 20.03.29_06b846d2.jpg" alt="Forminhas">
+                        <h3 class="forminha-title">[nome da forminha]</h3>
+                        <span class="forminha-description">Descrição da forminha</span>
+                        <div class="forminha-price">
+                            <h4>Consulte o valor</h4>
+                            <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
+                        </div>
                     </div>
                 </div>
-
-                <!--section 4-->
-                <div class="forminha">
-                    <img src="" alt="Forminhas">
-                    <h3 class="forminha-title">[nome da forminha]</h3>
-                    <span class="forminha-description">Descrição da forminha</span>
-                    <div class="forminha-price">
-                        <h4>Consulte o valor</h4>
-                        <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
-                    </div>
-                </div>
-
-                <!--section 5-->
-                <div class="forminha">
-                    <img src="" alt="Forminhas">
-                    <h3 class="forminha-title">[nome da forminha]</h3>
-                    <span class="forminha-description">Descrição da forminha</span>
-                    <div class="forminha-price">
-                        <h4>Consulte o valor</h4>
-                        <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
-                    </div>
-                </div>
-
-                <!--section 6-->
-                <div class="forminha">
-                    <img src="" alt="Forminhas">
-                    <h3 class="forminha-title">[nome da forminha]</h3>
-                    <span class="forminha-description">Descrição da forminha</span>
-                    <div class="forminha-price">
-                        <h4>Consulte o valor</h4>
-                        <button class="btn-default"><i class="fa-solid fa-phone"></i>(55+) 34 9 9999-9999</button>
-                    </div>
-                </div>    
             </div>
         </section>
         
@@ -159,6 +169,7 @@
             </div>
         </div>
     </footer>
-<script src=""></script>
+
+<script src="src/script/script.js"></script>
 </body>
 </html>
