@@ -10,10 +10,23 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(to right, #689a74, #4da94f, #2c7e28);
+    /*background: linear-gradient(to right, #689a74, #4da94f, #2c7e28);*/
+    background-color: /*#00ffcc*/ #ced8d4;
 }
 main {
-padding: 2rem 8%;
+padding: 1rem 8%;
+}
+strong {
+    color: rgb(64, 186, 239);
+    font-size: px;
+    font-weight: 400;
+}
+h2,p, a {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: s;
+    text-decoration: none;
 }
 .btn-default {
     align-items: center;

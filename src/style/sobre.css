@@ -1,0 +1,44 @@
+.container-sobre {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 55%;
+}
+
+.box-img-main {
+    justify-content: flex-end;
+    max-width: 100px;
+    padding: 1rem;
+}
+
+.img-profile {
+    width: 100%;
+    border-radius: 1.5rem;
+    object-fit: cover;
+}
+
+/* Responsivo */
+@media screen and (max-width: 550px) {
+    .container-sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-img-main {
+        display: none !important;
+    }
+
+    .cta {
+        width: 100%;
+    }
+}
