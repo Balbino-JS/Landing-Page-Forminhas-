@@ -1,5 +1,6 @@
 footer {
     background-color: #073607;
+    padding: .5rem;
 }
 #footer_items {
     align-items: center;

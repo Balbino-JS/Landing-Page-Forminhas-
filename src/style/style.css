@@ -13,11 +13,33 @@ body {
     /*background: linear-gradient(to right, #689a74, #4da94f, #2c7e28);*/
     background-color: /*#00ffcc*/ #ced8d4;
 }
+.barra {
+    background-color: #143604;
+    margin: 0;
+    padding: 1rem;
+}
 main {
 padding: 1rem 8%;
 }
+.faixa-animada {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .faixa-animada p {
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 100%;
+    animation: deslizar 25s linear infinite;
+  }
 strong {
-    color: rgb(64, 186, 239);
+    color: rgb(4, 95, 53);
     font-size: px;
     font-weight: 400;
 }
@@ -28,7 +50,7 @@ h2,p, a {
     justify-content: s;
     text-decoration: none;
 }
-.btn-default {
+/*.btn-default {
     align-items: center;
     background: linear-gradient(to right, #143604,#b7d7a8, #455022, #4b5320, #8a9a5b, #1a4d02);
     border: none;
@@ -44,7 +66,7 @@ h2,p, a {
 .btn-default:hover {
     background: linear-gradient(to right, #226304, #d0e399, #4a5507, #2a3703, #236c02);
     transition: background-color .3s ease;
-}
+}*/
 .social-media-buttons {
     display: flex;
     gap: 18px;
@@ -82,3 +104,11 @@ h3,h4 {
         justify-content: center;
     }
 }
+@keyframes deslizar {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

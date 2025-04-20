@@ -1,16 +1,12 @@
-/*header {
-    background-color: transparent #a1f19c;
-    padding: 28px;
-    width: 100%;
-}*/
 header {
     align-items: center;
-    background-color: /*#a1f19c*/ rgb(161, 241, 156, 0);
+    background-color: /*#a1f19c*/ rgb(161, 241, 156, 0.3);
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     left: 0;
-    padding: 1rem 2rem;
+    margin-top: -.5rem;
+    padding: 1rem;
     position: fixed;
     right: 0;
     top: 0;
@@ -18,8 +14,7 @@ header {
     z-index: 1000;
 }
 .logo-img {
-    /*background-color: 0px 0px 12px 4px rgb(0, 0, 0, 0.9);*/
-    border-radius: 20%;
+    border-radius: 50%;
     cursor: pointer;
     height: 6rem;
     margin: 1rem;
@@ -30,7 +25,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100%;
 }
 #nav_list {
